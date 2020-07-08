@@ -1,5 +1,7 @@
 ﻿using DemoQA.Pages.SelectablePage;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -38,6 +40,12 @@ namespace DemoQA.Tests.Interactions
         [TearDown]
         public void TearDown()
         {
+            if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+            {
+                var screenshot = ((ITakesScreenshot)Driver).GetScreenshot();
+                screenshot.SaveAsFile($"{TestContext.CurrentContext.Test.FullName}", ScreenshotImageFormat.Jpeg);
+            }
+
             Driver.Quit();
         }
     }

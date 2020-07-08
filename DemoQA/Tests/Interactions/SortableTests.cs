@@ -1,7 +1,10 @@
 ﻿using DemoQA.Pages.SortablePage;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace DemoQA.Tests.Interactions
@@ -41,6 +44,13 @@ namespace DemoQA.Tests.Interactions
         [TearDown]
         public void TearDown()
         {
+            if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+            {
+                var path = Path.Combine(Environment.CurrentDirectory, @"Screenshots\", "FirstSortableTests");
+                var screenshot = ((ITakesScreenshot)Driver).GetScreenshot();
+                screenshot.SaveAsFile($"{path}.png", ScreenshotImageFormat.Png);
+            }
+
             Driver.Quit();
         }
     }

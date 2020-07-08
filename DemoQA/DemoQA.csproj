@@ -18,6 +18,7 @@
   <ItemGroup>
     <Folder Include="Factories\" />
     <Folder Include="Models\" />
+    <Folder Include="Screenshots\" />
   </ItemGroup>
 
 </Project>

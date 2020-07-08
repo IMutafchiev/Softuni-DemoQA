@@ -10,7 +10,7 @@ namespace DemoQA.Pages.SortablePage
 
         public void AssertAreElementsSortedAfterMoveTwoElements()
         {
-            Assert.AreEqual("Two", AllSortableElements[0].Text);
+            Assert.AreEqual("T", AllSortableElements[0].Text);
         }
 
         public void AssertAreElementsSortedAfterMoveOtherTwoElements()

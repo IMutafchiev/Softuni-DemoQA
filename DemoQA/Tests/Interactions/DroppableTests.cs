@@ -2,6 +2,8 @@
 using DemoQA.Pages.DroppablePage.AcceptDroppableSection;
 using DemoQA.Pages.DroppablePage.PreventPropogationDroppableSection;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -53,6 +55,9 @@ namespace DemoQA.Tests.Interactions
         [TearDown]
         public void TearDown()
         {
+
+          
+
             Driver.Quit();
         }
     }
