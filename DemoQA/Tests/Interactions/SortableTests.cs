@@ -46,9 +46,9 @@ namespace DemoQA.Tests.Interactions
         {
             if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
             {
-                var path = Path.Combine(Environment.CurrentDirectory, @"Screenshots\", "FirstSortableTests");
+                string dir = Path.GetFullPath(@"..\..\..\", Directory.GetCurrentDirectory());
                 var screenshot = ((ITakesScreenshot)Driver).GetScreenshot();
-                screenshot.SaveAsFile($"{path}.png", ScreenshotImageFormat.Png);
+                screenshot.SaveAsFile($"{dir}\\Screenshots\\FirstSortableTest.png", ScreenshotImageFormat.Png);
             }
 
             Driver.Quit();
