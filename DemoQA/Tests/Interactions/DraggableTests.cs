@@ -1,4 +1,4 @@
-﻿using DemoQA.Pages.DraggablePage;
+﻿using DemoQA.Pages.Interactions.DraggablePage;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;

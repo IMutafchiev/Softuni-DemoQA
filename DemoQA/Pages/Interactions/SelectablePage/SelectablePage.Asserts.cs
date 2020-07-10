@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DemoQA.Pages.SelectablePage
+namespace DemoQA.Pages.Interactions.SelectablePage
 {
     public partial class SelectablePage : BasePage
     {

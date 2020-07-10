@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DemoQA.Pages.SelectablePage
+namespace DemoQA.Pages.Interactions.SelectablePage
 {
     public partial class SelectablePage : BasePage
     {

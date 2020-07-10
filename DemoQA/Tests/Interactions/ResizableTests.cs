@@ -1,4 +1,4 @@
-﻿using DemoQA.Pages.ResizablePage;
+﻿using DemoQA.Pages.Interactions.ResizablePage;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;

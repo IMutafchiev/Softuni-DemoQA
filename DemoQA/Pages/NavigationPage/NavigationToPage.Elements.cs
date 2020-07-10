@@ -12,12 +12,10 @@ namespace DemoQA.Pages.NavigationPage
         }
 
 
-        public IWebElement naviagationToInteractions => Driver.FindElement(By.XPath("//*[normalize-space(text()) = 'Interactions']//ancestor::div[@class='card mt-4 top-card']"));
+        public IWebElement naviagationToCard(string cardName) => Driver.FindElement(By.XPath($"//*[normalize-space(text()) = '{cardName}']//ancestor::div[@class='card mt-4 top-card']"));
 
 
-        public IWebElement interactions => Driver.FindElement(By.XPath("//*[normalize-space(text()) = 'Interactions']//span"));
-
-        public IWebElement interactionsSideBar(string sectionName) => Driver.FindElement(By.XPath($"//*[normalize-space(text()) = '{sectionName}']"));
+        public IWebElement cardName(string cardName) => Driver.FindElement(By.XPath($"//*[normalize-space(text()) = '{cardName}']/parent::div"));
 
         public IWebElement pageHeader => Wait.Until(d => d.FindElement(By.ClassName("main-header")));
         

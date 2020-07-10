@@ -1,6 +1,6 @@
-﻿using DemoQA.Pages.DroppablePage;
-using DemoQA.Pages.DroppablePage.AcceptDroppableSection;
-using DemoQA.Pages.DroppablePage.PreventPropogationDroppableSection;
+﻿using DemoQA.Pages.Interactions.DroppablePage;
+using DemoQA.Pages.Interactions.DroppablePage.AcceptDroppableSection;
+using DemoQA.Pages.Interactions.DroppablePage.PreventPropogationDroppableSection;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;

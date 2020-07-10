@@ -1,4 +1,4 @@
-﻿using DemoQA.Pages.SortablePage;
+﻿using DemoQA.Pages.Interactions.SortablePage;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;

@@ -1,10 +1,10 @@
-﻿using DemoQA.Pages.DroppablePage.AcceptDroppableSection;
+﻿using DemoQA.Pages.Interactions.DroppablePage.AcceptDroppableSection;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DemoQA.Pages.DroppablePage
+namespace DemoQA.Pages.Interactions.DroppablePage
 {
     public partial class DroppablePage : BasePage
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DemoQA.Pages.SortablePage
+namespace DemoQA.Pages.Interactions.SortablePage
 {
     public partial class SortablePage : BasePage
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DemoQA.Pages.DraggablePage
+namespace DemoQA.Pages.Interactions.DraggablePage
 {
     public partial class DraggablePage : BasePage
     {

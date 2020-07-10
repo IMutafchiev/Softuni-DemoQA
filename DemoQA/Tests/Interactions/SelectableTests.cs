@@ -1,4 +1,4 @@
-﻿using DemoQA.Pages.SelectablePage;
+﻿using DemoQA.Pages.Interactions.SelectablePage;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;

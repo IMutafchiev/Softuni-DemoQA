@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DemoQA.Pages.ResizablePage
+namespace DemoQA.Pages.Interactions.ResizablePage
 {
     public partial class ResizablePage : BasePage
     {

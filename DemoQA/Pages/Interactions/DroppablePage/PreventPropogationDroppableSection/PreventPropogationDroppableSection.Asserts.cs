@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DemoQA.Pages.DroppablePage.PreventPropogationDroppableSection
+namespace DemoQA.Pages.Interactions.DroppablePage.PreventPropogationDroppableSection
 {
     public partial class PreventPropogationDroppableSection : BasePage
     {

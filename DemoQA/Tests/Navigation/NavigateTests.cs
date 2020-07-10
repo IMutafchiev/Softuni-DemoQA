@@ -20,17 +20,18 @@ namespace DemoQA.Tests.Navigation
         }
 
         [Test]
-        [TestCase("Sortable")]
-        [TestCase("Selectable")]
-        [TestCase("Resizable")]
-        [TestCase("Droppable")]
-        [TestCase("Dragabble")]
-        public void NavigateTo(string sectionName)
+        [TestCase("Elements", "Elements")]
+        [TestCase("Forms", "Forms")]
+        [TestCase("Alerts, Frame & Windows", "Alerts, Frame & Windows")]
+        [TestCase("Widgets", "Widgets")]
+        [TestCase("Interactions", "Interactions")]
+        [TestCase("Book Store Application", "Book Store")]
+        public void NavigateTo(string cardName, string headerName)
         {
 
-            _navigationToPage.NavigateTo(sectionName);
+            _navigationToPage.NavigateTo(cardName);
 
-            _navigationToPage.AssertIsThisCorrectPage(sectionName);
+            _navigationToPage.AssertIsThisCorrectPage(headerName);
         }
 
         [TearDown]

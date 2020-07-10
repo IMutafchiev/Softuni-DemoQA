@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DemoQA.Pages.DroppablePage.AcceptDroppableSection
+namespace DemoQA.Pages.Interactions.DroppablePage.AcceptDroppableSection
 {
     public partial class AcceptDroppableSection : BasePage
     {
