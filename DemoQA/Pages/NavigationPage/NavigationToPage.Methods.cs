@@ -10,8 +10,7 @@ namespace DemoQA.Pages.NavigationPage
 
         public void NavigateTo(string cardsName)
         {
-            ScrollTo(cardName(cardsName));
-            naviagationToCard(cardsName).Click();
+            ScrollTo(naviagationToCard(cardsName)).Click();
         }
 
     }

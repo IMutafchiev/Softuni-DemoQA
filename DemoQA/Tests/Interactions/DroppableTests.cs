@@ -6,6 +6,7 @@ using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace DemoQA.Tests.Interactions
@@ -56,7 +57,14 @@ namespace DemoQA.Tests.Interactions
         public void TearDown()
         {
 
-          
+            if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+            {
+                var dir = Path.GetFullPath(@"..\..\..\", Directory.GetCurrentDirectory());
+                var screenshot = ((ITakesScreenshot)Driver).GetScreenshot();
+                screenshot.SaveAsFile
+                    ($"{dir}\\Screenshots\\Interactions\\{TestContext.CurrentContext.Test.FullName.Replace('"', ' ')}.png"
+                    , ScreenshotImageFormat.Jpeg);
+            }
 
             Driver.Quit();
         }

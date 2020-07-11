@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.13.0" />
     <PackageReference Include="nunit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
@@ -16,9 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Factories\" />
-    <Folder Include="Models\" />
-    <Folder Include="Screenshots\" />
+    <Folder Include="Screenshots\Elements\" />
+    <Folder Include="Screenshots\Interactions\" />
+    <Folder Include="Screenshots\Navigation\" />
+    <Folder Include="Screenshots\CheckBox\" />
   </ItemGroup>
 
 </Project>

@@ -93,6 +93,8 @@ D:\QA Automation\SeleniumAdvancedHomework\DemoQA\obj\Debug\netcoreapp3.1\DemoQA.
 D:\QA Automation\SeleniumAdvancedHomework\DemoQA\bin\Debug\netcoreapp3.1\WebDriver.dll
 D:\QA Automation\SeleniumAdvancedHomework\DemoQA\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
 D:\QA Automation\SeleniumAdvancedHomework\DemoQA\bin\Debug\netcoreapp3.1\DemoQA.pdb
-D:\QA Automation\SeleniumAdvancedHomework\DemoQA\obj\Debug\netcoreapp3.1\DemoQA.csproj.CoreCompileInputs.cache
 D:\QA Automation\SeleniumAdvancedHomework\DemoQA\obj\Debug\netcoreapp3.1\DemoQA.dll
 D:\QA Automation\SeleniumAdvancedHomework\DemoQA\obj\Debug\netcoreapp3.1\DemoQA.pdb
+D:\QA Automation\SeleniumAdvancedHomework\DemoQA\bin\Debug\netcoreapp3.1\AutoFixture.dll
+D:\QA Automation\SeleniumAdvancedHomework\DemoQA\bin\Debug\netcoreapp3.1\Fare.dll
+D:\QA Automation\SeleniumAdvancedHomework\DemoQA\obj\Debug\netcoreapp3.1\DemoQA.csproj.CoreCompileInputs.cache

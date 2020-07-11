@@ -48,7 +48,9 @@ namespace DemoQA.Tests.Interactions
             {
                 string dir = Path.GetFullPath(@"..\..\..\", Directory.GetCurrentDirectory());
                 var screenshot = ((ITakesScreenshot)Driver).GetScreenshot();
-                screenshot.SaveAsFile($"{dir}\\Screenshots\\FirstSortableTest.png", ScreenshotImageFormat.Png);
+                screenshot.SaveAsFile
+                    ($"{dir}\\Screenshots\\Interactions\\{TestContext.CurrentContext.Test.FullName.Replace('"', ' ')}.png"
+                    , ScreenshotImageFormat.Png);
             }
 
             Driver.Quit();

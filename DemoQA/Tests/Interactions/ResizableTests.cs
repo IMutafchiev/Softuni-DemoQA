@@ -1,7 +1,11 @@
 ﻿using DemoQA.Pages.Interactions.ResizablePage;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
+using NUnit.Framework.Internal.Execution;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace DemoQA.Tests.Interactions
@@ -38,6 +42,14 @@ namespace DemoQA.Tests.Interactions
         [TearDown]
         public void TearDown()
         {
+            if(TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+            {
+                var dir = Path.GetFullPath(@"..\..\..\", Directory.GetCurrentDirectory());
+                var screenshot = ((ITakesScreenshot)Driver).GetScreenshot();
+                screenshot.SaveAsFile
+                    ($"{dir}\\Screenshots\\Interactions\\{TestContext.CurrentContext.Test.FullName.Replace('"', ' ')}.png"
+                    , ScreenshotImageFormat.Png);
+            }
             Driver.Quit();
         }
 

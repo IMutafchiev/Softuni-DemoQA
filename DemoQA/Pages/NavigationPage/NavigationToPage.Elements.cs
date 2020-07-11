@@ -12,10 +12,8 @@ namespace DemoQA.Pages.NavigationPage
         }
 
 
-        public IWebElement naviagationToCard(string cardName) => Driver.FindElement(By.XPath($"//*[normalize-space(text()) = '{cardName}']//ancestor::div[@class='card mt-4 top-card']"));
-
-
-        public IWebElement cardName(string cardName) => Driver.FindElement(By.XPath($"//*[normalize-space(text()) = '{cardName}']/parent::div"));
+        public IWebElement naviagationToCard(string cardName) => Driver.FindElement
+            (By.XPath($"//*[normalize-space(text()) = '{cardName}']//ancestor::div[@class='card mt-4 top-card']"));
 
         public IWebElement pageHeader => Wait.Until(d => d.FindElement(By.ClassName("main-header")));
         
